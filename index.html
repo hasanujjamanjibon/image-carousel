@@ -16,55 +16,41 @@
       .no-scrollbar::-webkit-scrollbar {
         display: none;
       }
+      #imageGallery {
+        scroll-behavior: smooth;
+      }
     </style>
   </head>
-  <body class="flex justify-center items-center min-h-screen">
-    <button><img class="h-20 relative left-8" src="./img/back.png" alt="" /></button>
+  <body
+    class="flex justify-center items-center min-h-screen bg-[url('https://i.postimg.cc/mkQ3hZmb/bg-image.jpg')] bg-no-repeat bg-cover bg-center"
+  >
+    <button id="backBtn">
+      <img class="h-20 relative left-8" src="./img/back.png" alt="" />
+    </button>
     <div
-      class="flex justify-start items-center w-[950px] overflow-x-scroll no-scrollbar"
+      id="imageGallery"
+      class="flex justify-center items-center gap-2 w-[950px] overflow-x-scroll no-scrollbar"
     >
-      <img
-        class="h-80 w-64 object-cover min-w-max"
-        src="./img/img1.jpg"
-        alt="img-1"
-      />
-      <img
-        class="h-80 w-64 object-cover min-w-max"
-        src="./img/img2.jpg"
-        alt="img-2"
-      />
-      <img
-        class="h-80 w-64 object-cover min-w-max"
-        src="./img/img8.jpg"
-        alt="img-8"
-      />
-      <img
-        class="h-80 w-64 object-cover min-w-max"
-        src="./img/img3.jpg"
-        alt="img-3"
-      />
-      <img
-        class="h-80 w-64 object-cover min-w-max"
-        src="./img/img6.jpg"
-        alt="img-6"
-      />
-      <img
-        class="h-80 w-64 object-cover min-w-max"
-        src="./img/img7.jpg"
-        alt="img-7"
-      />
-      <img
-        class="h-80 w-64 object-cover min-w-max"
-        src="./img/img4.jpg"
-        alt="img-4"
-      />
-      <img
-        class="h-80 w-64 object-cover min-w-max"
-        src="./img/img5.jpg"
-        alt="img-5"
-      />
+      <img class="h-96 w-72 object-cover" src="./img/img1.jpg" alt="img-1" />
+      <img class="h-96 w-72 object-cover" src="./img/img2.jpg" alt="img-2" />
+      <img class="h-96 w-72 object-cover" src="./img/img8.jpg" alt="img-8" />
+      <img class="h-96 w-72 object-cover" src="./img/img3.jpg" alt="img-3" />
+      <img class="h-96 w-72 object-cover" src="./img/img6.jpg" alt="img-6" />
+      <img class="h-96 w-72 object-cover" src="./img/img7.jpg" alt="img-7" />
+      <img class="h-96 w-72 object-cover" src="./img/img1.jpg" alt="img-1" />
+      <img class="h-96 w-72 object-cover" src="./img/img2.jpg" alt="img-2" />
+      <img class="h-96 w-72 object-cover" src="./img/img8.jpg" alt="img-8" />
+      <img class="h-96 w-72 object-cover" src="./img/img3.jpg" alt="img-3" />
+      <img class="h-96 w-72 object-cover" src="./img/img6.jpg" alt="img-6" />
+      <img class="h-96 w-72 object-cover" src="./img/img7.jpg" alt="img-7" />
+      <img class="h-96 w-72 object-cover" src="./img/img8.jpg" alt="img-8" />
+      <img class="h-96 w-72 object-cover" src="./img/img3.jpg" alt="img-3" />
+      <img class="h-96 w-72 object-cover" src="./img/img6.jpg" alt="img-6" />
+      <img class="h-96 w-72 object-cover" src="./img/img4.jpg" alt="img-4" />
     </div>
-    <button><img class="h-20 relative -left-8" src="./img/next.png" alt="" /></button>
+    <button id="nextBtn">
+      <img class="h-20 relative -left-8" src="./img/next.png" alt="" />
+    </button>
 
     <script src="./script.js"></script>
   </body>
